@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+:root {
+    --grayH1: rgba(70, 70, 70, 0.989);
+    --grayP: rgb(128, 128, 128);
+    --green: rgb(0, 255, 94);
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 98%);
+    overflow-x: hidden;
+
+}
+#menu{
+    width: 95.3vw;
+    background-color: white;
+    position: fixed; 
+    display: block;
+    padding: 30px;
+    
+}
+#menuElements{
+    padding-left: 12%;
+    
+}
+#ulOne{
+    width: 500px;
+    display: inline-block;
+    list-style: none;
+    position: fixed;
+    top: 15px;
+    left: 35%; 
+    right: 35%
+}
+.liOne{
+    list-style: none;
+    display: inline;
+    margin-right: 25px;
+    font-size: 1.15em;
+    cursor: pointer;
+    margin-top: 500px;
+    color: var(--grayP);
+
+}
+.liOne:hover{
+    border-bottom: 6px solid var(--green);
+    padding-bottom:25px;
+    color: black;
+    transition: 0.3s;
+    display: fixed;
+}
+#hamburguer{
+    display: none;
+    cursor: pointer;
+}
+.one{
+    position: absolute;
+    right: 11vw;
+    top: 14px; 
+    padding: 15px;
+    border-radius: 60px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+    background-color: var(--green); 
+    background-image: linear-gradient(to right, var(--green) , rgba(0, 102, 255, 0.715))
+}
+#top{
+    padding-left: 13%;
+}
+
+/* container intro */
+h1:nth-child(1){
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--grayH1);
+}
+p:nth-child(1){
+    font-size: px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.two{
+    margin-top: 30px;
+    margin-left: -5px;
+    padding: 15px;
+    border-radius: 60px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9em;
+    background-color: var(--green); 
+    background-image: linear-gradient(to right, var(--green) , rgba(0, 102, 255, 0.715))
+
+}
+.intro{
+    align-self: center;
+    margin-top: -250px;
+}
+.intro p {
+    color: var(--grayP);
+}
+.intro h1{
+    color: var(--grayH1);
+}
+.cell{
+    margin-left: 52%;
+    margin-top: -5%;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-image: url('./images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 500px;
+    background-size: 100%;
+
+}
+#why{
+    margin-top: -150px;
+    width: 75.5vw;
+    padding: 1.5% 10% 3% 13%;
+    margin-bottom: 65px;
+}
+
+#whyBackground{
+    background-color:rgb(228, 225, 225);
+    
+}
+
+
+.contFlex1{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  line-height: 23px;
+
+}
+.contFlex1,.contFlex2  h2, #why h1{
+    color:var(--grayH1)
+}
+.contFlex1, .contFlex2 p, #why p{
+    color:var(--grayP)
+}
+#latest{
+    width: 75.5vw;
+    padding: 0 13%;
+    margin-bottom: 65px;
+
+}
+.contFlex2{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  width: 100%;
+}
+.flex2{
+    background-color: rgba(228, 225, 225, 0.804);
+    padding: 10px;
+}
+span:hover{
+    color: var(--green);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.lImage{
+    width: 16.65vw;
+    height: 215px;
+}
+footer{
+    padding: 20px 13% 20px 13%;
+    background-color: hsl(233, 26%, 24%)
+}
+.socialMidias{
+    margin-top: 30px;
+    
+}
+.social{
+    display: inline
+}
+#ulTwo{
+    list-style: none;
+}
+.liTwo{
+    color: white;
+    line-height: 30px;
+}
+.liTwo:hover{
+    color: var(--green);
+    transition: 0.1s;
+    cursor: pointer;
+    
+}
+#ulThree{
+    list-style: none;
+}
+.liThree{
+    color: white;
+    line-height: 30px;
+}
+.liThree:hover{
+    color: var(--green);
+    transition: 0.1s;
+    cursor: pointer;
+    
+}
+.three{
+    width: 170px;
+    height: 45px;
+    padding: 15px;
+    border-radius: 60px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9em;
+    justify-self: flex-end;
+    background-color: var(--green); 
+    background-image: linear-gradient(to right, var(--green) , rgba(0, 102, 255, 0.715))
+}
+#contFlex3{
+    display: grid;
+    grid-template-columns: 20% 20% 20%  40%;
+    grid-row: 1fr;
+    align-items: center;
+    align-content: flex-end;
+}
+@media (max-width: 1100px){
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: hsl(0, 0%, 98%);
+        overflow-x: hidden;
+    
+    }
+    #menu{
+        width: 95.3vw;
+        background-color: white;
+        position: fixed; 
+        display: block;
+        padding: 30px;
+        
+    }
+    #ulOne{
+        display: none;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        width: 40%;
+        padding: 0% 5% 5% 15%;
+        margin-left: -13%;
+        margin-top: 13%;
+    }
+    .liOne{
+        list-style: none;
+        display: block;
+        margin-left: -50px;
+        margin-top: 20%;
+        color: black;
+    
+    }
+    .liOne:hover{
+        border-bottom:none;
+        padding-bottom:none;
+        color: none;
+        transition: none;
+    }
+    #hamburguer{
+        display: block;
+        position: fixed;
+        right: 11vw;
+        top: 20px; 
+        padding: 10px;
+        height: 20px;
+    }
+    .one{
+        display: none;
+       
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        background-position: -25% ;
+        background-size: 200%;
+    
+    }
+    .cell{
+        margin-left: 25%;
+        margin-top: 9%;
+        width: 90%;
+    
+    }
+    .two{
+        padding: 7px;
+        font-size: 20px;
+        height: 37px;
+        width: 150px;
+        
+    }
+    .intro h1{
+        font-size: 25px;
+        margin-top: 250px;
+        font-size: 50px;
+    }
+    .intro p{
+        margin-top: -245px;
+        font-size: 13px;
+        font-size: 20px;
+    }
+    #why{
+        margin-top: -80px;
+    }
+    .contFlex1{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        padding-bottom: 30px;
+        text-align: center;      
+    }
+    #latest{
+        text-align: center;
+    }
+    .contFlex2{
+        text-align: normal;
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+        gap: px;
+        width: 100%;
+    }
+    .lImage{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 650px){
+    #menu{
+        top: 0px;
+    }
+    #menuElements{
+        padding-left: 0;
+        
+    }
+    #hamburguer{
+        margin-right: -7.5%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 120px;
+        background-position: 50% -40vh ;
+        background-size: 270%;
+        padding-left: 0;
+        padding-top: 13%;
+    
+    }
+    #top{
+        padding-left: 0%;
+    }
+    .cell{
+        margin-left: 10px;
+        margin-top: 0;
+        width: 97%;
+        height: 100%;
+        padding-left: 0;
+    
+    }
+    .container{
+        margin-top: -90px;
+    }
+    .intro{
+        text-align: center;
+    }
+    #why{
+        margin-top: 80px;
+        text-align: center;
+    }
+    .contFlex1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 15px;
+        line-height: 23px;
+      
+    }
+    #latest{
+        text-align: center;
+        padding-left: 
+    }
+    .contFlex2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+    .flex2{
+        padding: 10px;
+    }
+    .lImage{
+        width: 100%;
+    }
+    #contFlex3{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none
+
+    }
+    #ulTwo{
+        margin-right: 60px;
+    }
+    #ulThree{
+        margin-right: 30px;
+        margin-top: -19px;
+    }
+
+}
+
